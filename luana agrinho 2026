@@ -1,0 +1,113 @@
+tml>
+<html lang="pt<!DOCTYPE h-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> AgroSustentável
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Os Pilares</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="btn-principal">Conheça Mais</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="secao-pilares">
+        <h2>Forças que se Complementam</h2>
+        <p class="subtitulo">A produção de alimentos no Brasil se apoia em duas grandes vertentes fundamentais.</p>
+        
+        <div class="container-cards">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?auto=format&fit=crop&q=80&w=600" alt="Tecnologia no Agronegócio colheitadeira moderna">
+                </div>
+                <div class="card-corpo">
+                    <h3><i class="fa-solid fa-tractor"></i> O Agronegócio</h3>
+                    <p>Responsável por abastecer o mercado global em larga escala. Utiliza alta tecnologia, inteligência artificial e agricultura de precisão para otimizar recursos, reduzir o desperdício de água e maximizar a eficiência por hectare.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=600" alt="Agricultura familiar plantação de hortaliças">
+                </div>
+                <div class="card-corpo">
+                    <h3><i class="fa-solid fa-seedling"></i> Agricultura Familiar</h3>
+                    <p>A base da alimentação que chega à mesa dos brasileiros. Focada na diversidade de culturas, no desenvolvimento comunitário local e em práticas agroecológicas tradicionais que protegem a biodiversidade do solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustentabilidade" class="secao-sustentavel">
+        <h2>Inovações para o Equilíbrio Ambiental</h2>
+        <p class="subtitulo">Clique nos botões abaixo para descobrir as técnicas que unem produção e preservação.</p>
+
+        <div class="abas-container">
+            <div class="botoes-abas">
+                <button class="btn-aba ativo" onclick="mudarAba('ilpf')">ILPF</button>
+                <button class="btn-aba" onclick="mudarAba('bioinsumos')">Bioinsumos</button>
+                <button class="btn-aba" onclick="mudarAba('recursos')">Gestão Hídrica</button>
+            </div>
+
+            <div class="conteudo-aba ativo" id="ilpf">
+                <div class="aba-grid">
+                    <div>
+                        <h3>Integração Lavoura-Pecuária-Floresta</h3>
+                        <p>A estratégia ILPF integra atividades agrícolas, pecuárias e florestais em uma mesma área. Isso otimiza o uso da terra, melhora a fertilidade do solo através da ciclagem de nutrientes e neutraliza as emissões de gases de efeito estufa por meio do plantio de árvores.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=500" alt="Integração de pastagem e árvores">
+                </div>
+            </div>
+
+            <div class="conteudo-aba" id="bioinsumos">
+                <div class="aba-grid">
+                    <div>
+                        <h3>Defensivos e Fertilizantes Biológicos</h3>
+                        <p>O uso de microrganismos, insetos benéficos e extratos vegetais para controlar pragas e nutrir o solo. Substitui gradativamente os produtos químicos sintéticos, diminuindo o impacto ambiental e garantindo alimentos ainda mais saudáveis.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?auto=format&fit=crop&q=80&w=500" alt="Mão segurando solo fértil e broto">
+                </div>
+            </div>
+
+            <div class="conteudo-aba" id="recursos">
+                <div class="aba-grid">
+                    <div>
+                        <h3>Irrigação Inteligente</h3>
+                        <p>Sensores conectados no solo avaliam a umidade exata em tempo real, enviando a quantidade estritamente necessária de água para a plantação. Sistemas como o gotejamento evitam o desperdício desse recurso vital.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&q=80&w=500" alt="Sistema de irrigação em campo de plantação">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2026 AgroSustentável. Cultivando a produtividade, preservando a vida.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+        
