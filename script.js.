@@ -1,0 +1,23 @@
+function mudarAba(idAba) {
+    // 1. Capturar todos os blocos de conteúdo das abas e remover a classe 'ativo'
+    const conteudos = document.querySelectorAll('.conteudo-aba');
+    conteudos.forEach(conteudo => {
+        conteudo.classList.remove('ativo');
+    });
+
+    // 2. Capturar todos os botões e remover a classe 'ativo'
+    const botoes = document.querySelectorAll('.btn-aba');
+    botoes.forEach(botao => {
+        botao.classList.remove('ativo');
+    });
+
+    // 3. Ativar o bloco de conteúdo correspondente ao ID passado por parâmetro
+    document.getElementById(idAba).classList.add('ativo');
+
+    // 4. Adicionar a classe 'ativo' ao botão que chamou o evento
+    // Procura o botão cujo atributo onclick contém o nome da aba desejada
+    const botaoAtivo = Array.from(botoes).find(btn => btn.getAttribute('onclick').includes(idAba));
+    if (botaoAtivo) {
+        botaoAtivo.classList.add('ativo');
+    }
+}
